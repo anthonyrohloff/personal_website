@@ -1,9 +1,10 @@
 .app-header {
     height: 60px;
-    line-height: 60px;
-    border-bottom: thin #BFCBCE solid;
-    margin-left: 2%;
-    margin-bottom: 1%;
+    line-height: normal;
+    border-bottom: thick #BFCBCE solid;
+    margin-left: 7rem;
+    margin-right: 2rem;
+    padding: 1rem 0rem;
 }
 
 .app-header .app-header--title {
