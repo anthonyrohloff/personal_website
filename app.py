@@ -24,6 +24,8 @@ app = Dash(
     use_pages=True
 )
 
+server = app.server
+
 sidebar = html.Div(
     [
         html.Div(
