@@ -11,7 +11,7 @@ layout = html.Div([
     ),
     html.Br(),
     html.Div(
-        "My name is Anthony Rohloff, and I am a cybersecurity engineering student at the University of Cincinnati. I have minors in computer science and business administration. My studies are at the intersection of electrical engineering, computer engineering, and computer science."
+        "My name is Anthony Rohloff, and I am a Cybersecurity Engineering student at the University of Cincinnati. I have minors in computer science and business administration. My studies are at the intersection of electrical engineering, computer engineering, and computer science."
     ),
     html.Br(),
     html.Div("Outside of school, I have also furthered my knowledge in the field of cybersecurity by earning two certifications. First, I earned SC-900, Microsoft Security, Identity, and Compliance Fundamentals. This certification helped me cement a strong foundation for essential cybersecurity concepts, as well as teach me about Microsoft-specific technologies such as Microsoft Entra and Sentinel. After that, I passed CompTIA Security+ SY0-701 on the first attempt. This certification is a highly popular certification for those trying to break into the industry due to its wide scope and application-oriented questions."),
