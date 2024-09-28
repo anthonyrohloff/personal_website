@@ -51,6 +51,18 @@ sidebar = html.Div(
                 dbc.NavLink(
                     [
                         html.Div([
+                            html.I(className="fas fa-pencil"),
+                            html.Span("CTF Write-Ups", style={"color": "#BFCBCE", "verticalAlign": "middle"})
+                        ], className="d-flex align-items-center")
+                    ],
+                    href="/writeups",
+                    active="exact",
+                    className="nav-link",
+                ),
+                html.Br(),
+                dbc.NavLink(
+                    [
+                        html.Div([
                             html.I(className="fa-solid fa-comment"),
                             html.Span("Blog", style={"color": "#BFCBCE", "verticalAlign": "middle"})
                         ], className="d-flex align-items-center")
@@ -59,18 +71,6 @@ sidebar = html.Div(
                     active="exact",
                     className="nav-link",
                 ),
-                html.Br(),
-                dbc.NavLink(
-                    [
-                        html.Div([
-                            html.I(className="fas fa-pencil"),
-                            html.Span("CTF Write-Ups", style={"color": "#BFCBCE", "verticalAlign": "middle"})
-                        ], className="d-flex align-items-center")
-                    ],
-                    href="/writeups",
-                    active="exact",
-                    className="nav-link",
-                )
             ],
             vertical=True,
             pills=True,

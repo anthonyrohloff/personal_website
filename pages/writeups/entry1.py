@@ -77,7 +77,7 @@ hydra -l mitch -P [location of your rockyou.txt file] ssh://[target machine IP]:
 - `-P`: Points to the password list file (rockyou.txt)
 
 ![Cracked Password](/assets/writeup_assets/entry1/figure_5.png "Figure 5")
-*Figure 9: Cracked Password*
+*Figure 5: Cracked Password*
 
 Almost immediately, Hydra finds that **mitch's password** is **"secret"**.
 
