@@ -51,11 +51,23 @@ sidebar = html.Div(
                 dbc.NavLink(
                     [
                         html.Div([
-                            html.I(className="fas fa-pencil"),
+                            html.I(className="fa-solid fa-comment"),
                             html.Span("Blog", style={"color": "#BFCBCE", "verticalAlign": "middle"})
                         ], className="d-flex align-items-center")
                     ],
                     href="/blog",
+                    active="exact",
+                    className="nav-link",
+                ),
+                html.Br(),
+                dbc.NavLink(
+                    [
+                        html.Div([
+                            html.I(className="fas fa-pencil"),
+                            html.Span("CTF Write-Ups", style={"color": "#BFCBCE", "verticalAlign": "middle"})
+                        ], className="d-flex align-items-center")
+                    ],
+                    href="/writeups",
                     active="exact",
                     className="nav-link",
                 )
@@ -72,7 +84,7 @@ app.layout = (
     html.Div(
     className="app-header",
     children=[
-    html.H1('anthonyrohloff.com'),
+    html.H1('anthonyrohloff.onrender.com'),
     dash.page_container
 ]))
 

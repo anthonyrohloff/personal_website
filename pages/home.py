@@ -27,6 +27,12 @@ layout = html.Div([
             href='https://www.linkedin.com/in/anthonyrohloff/',
             target="_blank"
         ),
+        " or check out my ",
+        html.A(
+            [html.I(className="fa-brands fa-github"), "GitHub"],
+            href='https://github.com/anthonyrohloff',
+            target="_blank"
+        ),
         " for the most detailed and updated information about my education, professional experiences, and projects."
     ]),
     html.Br(),
