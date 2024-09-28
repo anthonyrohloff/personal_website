@@ -5,6 +5,7 @@ import os
 # Manually enter each entry's information here
 entry_info = {
     "entry1": {"name": "Simple CTF Write-up", "date": "September 27th, 2024"},
+    "entry2": {"name": "Mr. Robot CTF Write-up", "date": "September 28th, 2024"},
 }
 
 # Set up entry dict

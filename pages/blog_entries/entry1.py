@@ -1,6 +1,5 @@
 import dash
-import dash_core_components as dcc
-from dash import html
+from dash import html, dcc
 
 dash.register_page(__name__, path="/blog/entry1", title="The Impending Impact of Quantum Computing on Encryption Algorithms")
 

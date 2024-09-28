@@ -1,6 +1,5 @@
 import dash
-import dash_core_components as dcc
-from dash import html
+from dash import html, dcc
 
 dash.register_page(__name__, path="/writeups/entry1", title="Simple CTF Write-up")
 
