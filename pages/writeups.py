@@ -2,23 +2,17 @@ import dash
 from dash import html, dcc, Dash
 import os
 
+# Manually enter each entry's information here
+entry_info = {
+    "entry1": {"name": "Simple CTF Write-up", "date": "September 27th, 2024"},
+}
+
 # Set up entry dict
 entry_dict = {
-    entry[:-3]: {"name": "", "date": ""}
+    entry[:-3]: entry_info.get(entry[:-3], {"name": "not found", "date": "not found"})
     for entry in os.listdir(r"pages/writeups")
     if os.path.isfile(os.path.join(r"pages/writeups", entry))
 }
-
-# Set name and date for each entry, will have to be done manually for now
-for key in entry_dict.keys():
-    match key:
-        case "entry1":
-            entry_dict[key]["name"] = "Simple CTF Write-up"
-            entry_dict[key]["date"] = "September 27th, 2024"
-
-        case _:
-            entry_dict[key]["name"] = "not found"
-            entry_dict[key]["date"] = "not found"
 
 dash.register_page(__name__)
 
