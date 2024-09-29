@@ -5,6 +5,7 @@ import os
 # Manually enter each entry's information here
 entry_info = {
     "entry1": {"name": "The Impending Impact of Quantum Computing on Encryption Algorithms", "date": "August 10th, 2024"},
+    "entry2": {"name": "How I Passed Security+ with no Experience", "date": "September 29th, 2024"}
 }
 
 # Set up entry dict
