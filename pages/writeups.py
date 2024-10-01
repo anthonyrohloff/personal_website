@@ -6,7 +6,8 @@ import os
 entry_info = {
     "entry1": {"name": "Simple CTF Write-up", "date": "September 27th, 2024"},
     "entry2": {"name": "Mr. Robot CTF Write-up", "date": "September 28th, 2024"},
-    "entry3": {"name": "Crack the Hash Write-up", "date": "September 29th, 2024"}
+    "entry3": {"name": "Crack the Hash Write-up", "date": "September 29th, 2024"},
+    "entry4": {"name": "Library Write-up", "date": "September 30th, 2024"}
 }
 
 # Set up entry dict
