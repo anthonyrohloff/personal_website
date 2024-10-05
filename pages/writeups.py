@@ -18,6 +18,9 @@ entry_dict = {
     if os.path.isfile(os.path.join(r"pages/writeups", entry))
 }
 
+# Sort entries by entry number
+sorted_entries = sorted(entry_dict.keys(), key=lambda x: int(x[-1]))
+
 dash.register_page(__name__)
 
 layout = html.Div([
@@ -28,7 +31,7 @@ layout = html.Div([
                 dcc.Link(entry_dict[entry]["name"], href=f"/writeups/{entry}"),
                 html.Span(f" - {entry_dict[entry]['date']}"),
                 html.Br(),
-        ]) for entry in entry_dict
+            ]) for entry in sorted_entries
         ]
     )
 ])
