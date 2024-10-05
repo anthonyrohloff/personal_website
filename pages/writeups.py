@@ -7,7 +7,8 @@ entry_info = {
     "entry1": {"name": "Simple CTF Write-up", "date": "September 27th, 2024"},
     "entry2": {"name": "Mr. Robot CTF Write-up", "date": "September 28th, 2024"},
     "entry3": {"name": "Crack the Hash Write-up", "date": "September 29th, 2024"},
-    "entry4": {"name": "Library Write-up", "date": "September 30th, 2024"}
+    "entry4": {"name": "Library Write-up", "date": "September 30th, 2024"},
+    "entry5": {"name": "Thompson Write-up", "date": "October 5th, 2024"}
 }
 
 # Set up entry dict
@@ -25,7 +26,7 @@ layout = html.Div([
         [
             html.Div([
                 dcc.Link(entry_dict[entry]["name"], href=f"/writeups/{entry}"),
-                html.Span(f" - {entry_dict[entry]['date']}") ,
+                html.Span(f" - {entry_dict[entry]['date']}"),
                 html.Br(),
         ]) for entry in entry_dict
         ]
