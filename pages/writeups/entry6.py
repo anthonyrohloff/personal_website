@@ -77,9 +77,6 @@ if (is_resource($process)) {
 ?>
 ```
 
-![PHP script](/assets/writeup_assets/entry6/figure_3.png "Figure 3: PHP script")
-*Figure 3: PHP script*
-
 I followed the blog’s instructions on how to upload the file to the server. Once it was there, I set up a **netcat** listener.
 
 ```bash
@@ -92,8 +89,8 @@ Finally, I clicked on my file in the browser (`http://[target machine IP]/webdav
 
 I found **user.txt** in **/home/merlin**.
 
-![user.txt](/assets/writeup_assets/entry6/figure_4.png "Figure 4: user.txt")
-*Figure 4: user.txt*
+![user.txt](/assets/writeup_assets/entry6/figure_3.png "Figure 3: user.txt")
+*Figure 3: user.txt*
 
 ---
 
@@ -103,8 +100,8 @@ We can use `sudo -l` to discover that we can run `cat` on any file. From here, i
 sudo /bin/cat /root/root.txt
 ```
 
-![root.txt](/assets/writeup_assets/entry6/figure_5.png "Figure 5: root.txt")
-*Figure 5: root.txt*
+![root.txt](/assets/writeup_assets/entry6/figure_4.png "Figure 4: root.txt")
+*Figure 4: root.txt*
 
 ---
 
