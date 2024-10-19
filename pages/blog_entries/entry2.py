@@ -1,10 +1,10 @@
 import dash
 from dash import html, dcc
 
-dash.register_page(__name__, path="/blog/entry2", title="How I Passed Security+ with no Experience")
+dash.register_page(__name__, path="/blog/entry2", title="How I Passed Security+ without any Experience")
 
 post_content = """
-# How I Passed Security+ with no Experience
+# How I Passed Security+ without any Experience
 
 As a new college student aspiring to become a cybersecurity professional, I found myself wondering how I could learn about the field. After scouring the web to determine the best way to go about this endeavor, I determined that I would go for Security+. However, I had never done anything like this before, and it was a nerve-wracking thought to put so much time, effort, and money into something and potentially get nothing in return. I knew I was capable of it, but I needed to build up my confidence.
 
