@@ -20,8 +20,15 @@ import dash
 app = Dash(
     __name__,
     suppress_callback_exceptions=True,
-    external_stylesheets=[dbc.themes.MATERIA, dbc.icons.FONT_AWESOME, 'assets/sidebar.css', 'assets/body.css', 'assets/header.css', 'assets/typography.css'],
-    use_pages=True
+    external_stylesheets=[
+        dbc.themes.MATERIA,
+        dbc.icons.FONT_AWESOME,
+        "assets/sidebar.css",
+        "assets/body.css",
+        "assets/header.css",
+        "assets/typography.css",
+    ],
+    use_pages=True,
 )
 
 server = app.server
@@ -38,10 +45,19 @@ sidebar = html.Div(
             [
                 dbc.NavLink(
                     [
-                        html.Div([
-                            html.I(className="fas fa-home me-2"),
-                            html.Span("Home", style={"color": "#BFCBCE", "verticalAlign": "middle"})
-                        ], className="d-flex align-items-center")
+                        html.Div(
+                            [
+                                html.I(className="fas fa-home me-2"),
+                                html.Span(
+                                    "Home",
+                                    style={
+                                        "color": "#BFCBCE",
+                                        "verticalAlign": "middle",
+                                    },
+                                ),
+                            ],
+                            className="d-flex align-items-center",
+                        )
                     ],
                     href="/",
                     active="exact",
@@ -50,10 +66,19 @@ sidebar = html.Div(
                 html.Br(),
                 dbc.NavLink(
                     [
-                        html.Div([
-                            html.I(className="fas fa-pencil"),
-                            html.Span("CTF Write-Ups", style={"color": "#BFCBCE", "verticalAlign": "middle"})
-                        ], className="d-flex align-items-center")
+                        html.Div(
+                            [
+                                html.I(className="fas fa-pencil"),
+                                html.Span(
+                                    "CTF Write-Ups",
+                                    style={
+                                        "color": "#BFCBCE",
+                                        "verticalAlign": "middle",
+                                    },
+                                ),
+                            ],
+                            className="d-flex align-items-center",
+                        )
                     ],
                     href="/writeups",
                     active="exact",
@@ -62,10 +87,19 @@ sidebar = html.Div(
                 html.Br(),
                 dbc.NavLink(
                     [
-                        html.Div([
-                            html.I(className="fa-solid fa-comment"),
-                            html.Span("Blog", style={"color": "#BFCBCE", "verticalAlign": "middle"})
-                        ], className="d-flex align-items-center")
+                        html.Div(
+                            [
+                                html.I(className="fa-solid fa-comment"),
+                                html.Span(
+                                    "Blog",
+                                    style={
+                                        "color": "#BFCBCE",
+                                        "verticalAlign": "middle",
+                                    },
+                                ),
+                            ],
+                            className="d-flex align-items-center",
+                        )
                     ],
                     href="/blog",
                     active="exact",
@@ -82,11 +116,10 @@ sidebar = html.Div(
 app.layout = (
     sidebar,
     html.Div(
-    className="app-header",
-    children=[
-    html.H1('anthonyrohloff.onrender.com'),
-    dash.page_container
-]))
+        className="app-header",
+        children=[html.H1("anthonyrohloff.onrender.com"), dash.page_container],
+    ),
+)
 
-if __name__ == '__main__':
-    app.run_server(debug=True)
+if __name__ == "__main__":
+    app.run(debug=True)
