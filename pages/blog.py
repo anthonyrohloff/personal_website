@@ -1,5 +1,5 @@
 import dash
-from dash import html, dcc, Dash
+from dash import html, dcc
 import os
 
 # Manually enter each entry's information here
@@ -11,6 +11,14 @@ entry_info = {
     "entry2": {
         "name": "How I Passed Security+ without any Experience",
         "date": "September 29th, 2024",
+    },
+    "entry3": {
+        "name": "CHILLYHELL and ZynorRAT Article Review",
+        "date": "September 13th, 2025",
+    },
+    "entry4": {
+        "name": "SleepyDuck Malware Article Review",
+        "date": "November 12th, 2025",
     },
 }
 
@@ -43,4 +51,3 @@ layout = html.Div(
         ),
     ]
 )
-
