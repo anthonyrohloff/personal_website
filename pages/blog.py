@@ -20,6 +20,14 @@ entry_info = {
         "name": "SleepyDuck Malware Article Review",
         "date": "November 12th, 2025",
     },
+    "entry5": {
+        "name": "Copyright Law and Licensing of Computer Operating Systems",
+        "date": "January 16th, 2026",
+    },
+    "entry6": {
+        "name": "The Howey Test and Initial Coin Offerings",
+        "date": "February 10th, 2026",
+    },
 }
 
 # Set up entry dict
