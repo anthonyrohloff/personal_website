@@ -14,12 +14,14 @@ post_content = """
 From: Anthony Rohloff  
 To: Klein
 
-BLUF:
+## BLUF
+
 Penetration testing is a crucial step in system hardening, but it is critical that guidelines must be
 followed to ensure the legality of the operations, both from the side of the organization and the
 penetration tester.
 
-Background:
+## Background
+
 Penetration testing, commonly referred to as pen testing, is the practice of launching controlled
 cyberattacks against a computer system. Then, the results of the test are used to “harden” or improve
 the security posture of the system. Penetration testing is a subset of a wider field known as ethical
@@ -45,7 +47,8 @@ could be damage to production systems or an escaped malware that wreaks havoc on
 internet users, usually happening in the fourth step of the penetration testing process: exploitation
 (Gilliam).
 
-Analysis:
+## Analysis
+
 An example of 18 USC 1030, or the Computer Fraud and Abuse Act, in action during a pen
 testing exercise happened in 1999 when a security practitioner by the name of Scott Moulton
 performed a network scan on the Cherokee County, Georgia 911 system. Claims of a slow-down in the
@@ -68,7 +71,8 @@ Even if a bug was found in good faith, if it fell outside of the scope the bug b
 related organization, one could be found guilty of violating the CFAA (Mascellino). Intent only protects
 pen testers when they are explicitly authorized and operating within scope.
 
-Recommendations:
+## Recommendations
+
 Both organizations and pen testers need to be diligent when conducting penetration testing
 operations. Organizations are responsible for keeping their data secure, so they need to hire pen testers,
 but they need to ensure the pen testers they hire will work within scope and within the constraints of
@@ -79,19 +83,14 @@ and legal.
 
 Anthony Rohloff
 
-Works Cited
+## Works Cited
 
-Archer, Jerry. “A Court Ruling on Bug Bounties Just Made the Internet Less Safe.” Infosecurity
-Magazine, 25 July 2025, www.infosecurity-magazine.com/opinions/court-ruling-bug-bountiesinternet/.
-Gillam, Jason. “What Are the Ethical and Legal Considerations for Penetration Testing?” Secure Ideas,
-9 Mar. 2023, www.secureideas.com/knowledge/what-are-the-ethical-and-legal-considerationsfor-penetration-testing.
-Mascellino, Alessandro. “Uber’s Former Security Chief Convicted of 2016 Data Breach Cover-Up.”
-Infosecurity Magazine, 6 Oct. 2022, www.infosecurity-magazine.com/news/ubers-formersecurity-chief/.
-“Scott Moulton and Network Installation Computer Services, Inc. V. VC3.” Internetlibrary.com, 6 Nov.
-2000, www.internetlibrary.com/cases/lib_case37.cfm.
-“Understanding the Five Phases of the Penetration Testing Process.” Cybersecurity Exchange, ECCouncil, 28 Mar. 2022,
-www.eccouncil.org/cybersecurity-exchange/penetration-testing/penetration-testing-phases/.
-“What Is Penetration Testing?” Ibm.com, IBM, 24 Jan. 2023, www.ibm.com/think/topics/penetrationtesting.
+- Archer, Jerry. “A Court Ruling on Bug Bounties Just Made the Internet Less Safe.” Infosecurity Magazine, 25 July 2025.
+- Gillam, Jason. “What Are the Ethical and Legal Considerations for Penetration Testing?” Secure Ideas, 9 Mar. 2023.
+- Mascellino, Alessandro. “Uber’s Former Security Chief Convicted of 2016 Data Breach Cover-Up.” Infosecurity Magazine, 6 Oct. 2022.
+- “Scott Moulton and Network Installation Computer Services, Inc. V. VC3.” Internetlibrary.com, 6 Nov. 2000.
+- “Understanding the Five Phases of the Penetration Testing Process.” Cybersecurity Exchange, EC-Council, 28 Mar. 2022.
+- “What Is Penetration Testing?” IBM.com, IBM, 24 Jan. 2023.
 """
 
 layout = html.Div(
