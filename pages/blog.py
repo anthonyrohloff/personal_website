@@ -28,6 +28,10 @@ entry_info = {
         "name": "The Howey Test and Initial Coin Offerings",
         "date": "February 10th, 2026",
     },
+    "entry7": {
+        "name": "The Legal Considerations of Penetration Testing",
+        "date": "February 25th, 2026",
+    },
 }
 
 # Set up entry dict
